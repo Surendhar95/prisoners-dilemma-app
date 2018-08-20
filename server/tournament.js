@@ -18,7 +18,7 @@ module.exports = {
 	matches: [],
 	rounds: [],
 	started: false,
-	master_password: "federation",
+	password: '',
 
 	start: function() {
 

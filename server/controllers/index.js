@@ -1,11 +1,11 @@
 module.exports = function(app) {
 
+	require('./check-password')(app);
 	require('./info')(app);
 	require('./join')(app);
-	require('./status')(app);
 	require('./participants')(app);
-	require('./check_password')(app);
 	require('./start')(app)
+	require('./status')(app);
 
 	app.use(function(req, res, next) {
 		// If we get to this middleware, then none of the controllers matched the route.
